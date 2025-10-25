@@ -1,0 +1,304 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: #1d1d1f;
+  background-color: #fff;
+  line-height: 1.6;
+  height: 100%;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.applelogo {
+  height: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1d1d1f;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #0071e3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 85px;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e6e8eb 100%);
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.cta {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.cta:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+.hero-image img {
+  height: 400px;
+  /* width: 80%;
+  max-width: 700px; */
+  margin: 40px auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.features p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Signup Section */
+.signup {
+  background-color: #f5f5f7;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.signup h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.signup p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+form {
+  background: #fff;
+  padding: 40px;
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #0071e3;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.submit-btn:hover {
+  background-color: #005bb5;
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  color: #888;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        
+    }
+  .hero {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  /* .hero-image img {
+    width: 100%;
+  } */
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 15px 20px; /* Reduced side padding */
+  }
+  .features {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Hamburger Menu (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #000;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+/* Mobile Nav Active State */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  gap: 15px;
+}
+
+.nav-links.active a {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

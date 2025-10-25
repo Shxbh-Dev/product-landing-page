@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Watch Series X</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="navbar-div">
+          <div class="logo">
+            <img class="applelogo" src="./apple.png" alt="" /> Watch
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Tech Specs</a></li>
+          <li><a href="#">Buy</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Apple Watch Series X</h1>
+        <p>The future of health, right on your wrist.</p>
+        <button class="cta">Pre-Order Now</button>
+      </div>
+
+      <div class="hero-image">
+        <img src="./watch.png" alt="Apple Watch" />
+      </div>
+    </header>
+
+    <section class="features">
+      <h2>Stay Connected. Stay Ahead.</h2>
+      <p>
+        Track your workouts, monitor your health, and stay in touch — all with a
+        single glance. Crafted with aerospace-grade titanium, Apple Watch Series
+        X redefines elegance and performance.
+      </p>
+    </section>
+
+    <section class="signup">
+      <h2>Join Our Newsletter</h2>
+      <p>
+        Be the first to know about new releases, features, and exclusive offers.
+      </p>
+      <form>
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Appleseed"
+          required
+        />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label class="checkbox">
+          <input type="checkbox" name="agree" required />
+          I agree to receive promotional updates.
+        </label>
+
+        <input type="submit" value="Subscribe" class="submit-btn" />
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Apple Inc. All rights reserved.</p>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
+</html>
