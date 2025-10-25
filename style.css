@@ -222,6 +222,9 @@ footer {
   form{
     max-width: 95%;
   }
+  .hero-content h1{
+    margin: 10px;
+  }
   .navbar-div {
     width: 100%;
     display: flex;
