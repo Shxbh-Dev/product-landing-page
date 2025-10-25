@@ -9,7 +9,8 @@
 
 html,
 body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
   width: 100%;
 }
 
@@ -59,6 +60,7 @@ body {
   font-weight: 500;
   transition: color 0.3s ease;
 }
+
 .nav-links a:hover {
   color: #0071e3;
 }
@@ -102,6 +104,7 @@ body {
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
+
 .cta:hover {
   background-color: #005bb5;
   transform: scale(1.05);
@@ -130,6 +133,7 @@ body {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
 .features p {
   font-size: 1.1rem;
   color: #666;
@@ -146,6 +150,7 @@ body {
   font-size: 2rem;
   margin-bottom: 10px;
 }
+
 .signup p {
   margin-bottom: 30px;
   color: #555;
@@ -154,7 +159,7 @@ body {
 form {
   background: #fff;
   padding: 40px;
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -196,6 +201,7 @@ input[type="email"] {
   font-size: 1rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
+
 .submit-btn:hover {
   background-color: #005bb5;
   transform: scale(1.03);
@@ -212,24 +218,32 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .navbar-div{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:space-between;
-        
-    }
+
+  form{
+    max-width: 95%;
+  }
+  .navbar-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
   .hero {
     flex-direction: column;
     margin-top: 100px;
   }
+
   .hero-content h1 {
     font-size: 2.2rem;
   }
+
   .nav-links {
     flex-direction: column;
   }
+
   /* .hero-image img {
     width: 100%;
   } */
@@ -237,8 +251,10 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
-    padding: 15px 20px; /* Reduced side padding */
+    padding: 15px 20px;
+    /* Reduced side padding */
   }
+
   .features {
     font-size: 1.2rem;
   }
@@ -285,9 +301,11 @@ footer {
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
